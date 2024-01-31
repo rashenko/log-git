@@ -51,15 +51,15 @@
 ### НАСТРОЙКА ELK
 ### 1. Настраиваем Elasticsearch:
    
-* #### Запустить скрипт elasticsearch_config.sh, он настроит Elasticsearch;
+* #### Запустить скрипт [elasticsearch_config.sh](https://github.com/rashenko/log-git/blob/main/elasticsearch_script.sh), он настроит Elasticsearch;
 
 ### 2. Настраиваем Kibana:
    
-* #### Запустить скрипт kibana_config.sh, он настроит Kibana;
+* #### Запустить скрипт [kibana_config.sh](https://github.com/rashenko/log-git/blob/main/kibana_script.sh), он настроит Kibana;
 
 ### 3. Настраиваем Logstash:
    
-* #### Запустить скрипт logstash_script.sh, он настроит Logstash;
+* #### Запустить скрипт [logstash_script.sh](https://github.com/rashenko/log-git/blob/main/logstash_script.sh), он настроит Logstash;
 
 
 
