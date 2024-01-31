@@ -17,4 +17,3 @@ sed -i 's/server.host: .*/server.host: "0.0.0.0"/g' $file_path
 # Запуск сервиса
 systemctl daemon-reload
 systemctl enable --now kibana.service
-systemctl restart kibana
