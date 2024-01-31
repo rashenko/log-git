@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# Добавляем пользователей
-useradd --no-create-home --shell /bin/false node_exporter
-
 # Копируем конфиг службы node exporter
-cp /home/qqee/backend1-git/node_exporter.service /etc/systemd/system/node_exporter.service
+cp /home/qqee/log-git/node_exporter.service /etc/systemd/system/node_exporter.service
 
 # Перезапуск
 systemctl daemon-reload
