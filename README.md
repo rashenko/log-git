@@ -13,11 +13,6 @@
      https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.9.1-amd64.deb
 #
 
-> * Filebeat
-
-    https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.9.1-amd64.deb
-#
-
 > * Kibana
 
     https://artifacts.elastic.co/downloads/kibana/kibana-8.9.1-amd64.deb
