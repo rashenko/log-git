@@ -49,15 +49,19 @@
  # 
 
 ### НАСТРОЙКА ELK
-### 1. Настраиваем Elasticsearch:
+### 1. Настраиваем статические ip адреса:
+   
+* #### Запустить скрипт [networkd_static_ip.sh](https://github.com/rashenko/log-git/blob/main/networkd_static_ip.sh), он настроит статический ip
+
+### 2. Настраиваем Elasticsearch:
    
 * #### Запустить скрипт [elasticsearch_config.sh](https://github.com/rashenko/log-git/blob/main/elasticsearch_script.sh), он настроит Elasticsearch;
 
-### 2. Настраиваем Kibana:
+### 3. Настраиваем Kibana:
    
 * #### Запустить скрипт [kibana_config.sh](https://github.com/rashenko/log-git/blob/main/kibana_script.sh), он настроит Kibana;
 
-### 3. Настраиваем Logstash:
+### 4. Настраиваем Logstash:
    
 * #### Запустить скрипт [logstash_script.sh](https://github.com/rashenko/log-git/blob/main/logstash_script.sh), он настроит Logstash;
 
