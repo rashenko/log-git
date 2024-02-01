@@ -55,3 +55,7 @@ EOT
 
 # Перезапускаем сервис Logstash
 systemctl restart logstash.service
+
+# Включаем автозапуск сервиса Logstash
+systemctl status logstash.service
+
