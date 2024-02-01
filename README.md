@@ -22,13 +22,31 @@
 
     https://artifacts.elastic.co/downloads/logstash/logstash-8.9.1-amd64.deb
 #
-
 ### УСТАНОВКА ELK
 
 > #Устанавливаем Elasticsearch
 
     sudo dpkg -i elasticsearch-8.9.1-amd64.deb
 #   
+> #Добавляем в автозагрузку Elasticsearch
+
+    sudo systemctl enable --now elasticsearch.service
+#
+
+> #Сброс установленного пароля
+
+    /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
+#
+
+> #Сгенерируйте токен регистрации для экземпляров Kibana
+
+    /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+#
+
+> #Сгенерируйте токен регистрации для узлов Elasticsearch 
+
+    /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node
+#
  
 > #Установка JDK, для запуска, отладки и исполнения программ
 
@@ -52,6 +70,18 @@
    
     tar xzvf node_exporter-*.t*gz
  #
+
+   > #Добавляем пользователей
+   
+    useradd --no-create-home --shell /bin/false node_exporter
+#
+
+   > #Копируем файлы в /usr/local
+
+    cp node_exporter-*.linux-amd64/node_exporter /usr/local/bin
+#    
+    chown node_exporter: /usr/local/bin/node_exporter
+#
 
 ### НАСТРОЙКА ELK
 ### 1. Настраиваем статические ip адреса:
