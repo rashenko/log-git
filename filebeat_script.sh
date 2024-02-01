@@ -19,8 +19,6 @@ if [ -f "$file_path" ]; then
     fi
 fi
 
-filebeat modules enable nginx
-
 # Замена строк в файле
 sed -i 's|  error:\n
     enabled: .*|  error:\n
@@ -29,6 +27,9 @@ sed -i 's|  error:\n
 sed -i 's|  access:\n
     enabled: .*|  access:\n
     enabled: true|g' "$module_path"
-
-# Запуск сервиса
+ 
+# Запуск сервиса Filebeat
 systemctl restart filebeat
+
+# Проверяем статус сервиса Filebeat
+systemctl status filebeat
