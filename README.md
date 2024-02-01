@@ -83,6 +83,21 @@
     chown node_exporter: /usr/local/bin/node_exporter
 #
 
+### Настройка ELK (в браузере)
+
+* Добавляем индексные шаблоны Stack management - Index management
+* http://192.168.1.14:5601
+* Analytics - Discover - Create data view - weblogs* (слева вверху)
+* Analytics - Dashboard - Create
+* Donut - slice by response, size by #records
+
+
+
+
+
+
+
+
 ### НАСТРОЙКА ELK
 ### 1. Настраиваем статические ip адреса:
    
