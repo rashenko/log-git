@@ -45,7 +45,7 @@
 
 > #Сгенерируйте токен регистрации для узлов Elasticsearch 
 
-    /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node
+     /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node
 #
  
 > #Установка JDK, для запуска, отладки и исполнения программ
