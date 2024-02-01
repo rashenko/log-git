@@ -10,7 +10,11 @@ sed -i 's/  enabled: .*/  enabled: false/g' $file_path
 sed -i 's/xpack.security.transport.ssl:\n  enabled: .*/xpack.security.transport.ssl:\n  enabled: false/g' $file_path
 sed -i "s/cluster.initial_master_nodes:.*/cluster.initial_master_nodes: [$new_elk]/g" $file_path
 
-# Запуск сервиса
+# Запуск сервиса Elasticsearch
 sudo systemctl daemon-reload
-# Перезапуск сервиса
-sudo systemctl restart elasticsearch.service
+
+# Перезапуск сервиса Elasticsearch
+systemctl restart elasticsearch.service
+
+# Проверяем статус сервиса Elasticsearch
+systemctl status elasticsearch.service
