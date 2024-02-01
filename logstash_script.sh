@@ -11,7 +11,7 @@ chown -R root:logstash /etc/logstash/config
 # Замена строк в файле
 sed -i 's|#  path.config: .*|  path.config: /etc/logstash/conf.d|g' "$config_path"
 
-# Добовляем серис в автозагрузку
+# Добовляем в автозагрузку сервис Logstash
 systemctl enable --now logstash.service
 
 # Конфиг logstash
@@ -53,5 +53,5 @@ output {
 }
 EOT
 
-# Перезапускаем сервис
+# Перезапускаем сервис Logstash
 systemctl restart logstash.service
