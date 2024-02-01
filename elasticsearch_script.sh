@@ -12,4 +12,5 @@ sed -i "s/cluster.initial_master_nodes:.*/cluster.initial_master_nodes: [$new_el
 
 # Запуск сервиса
 sudo systemctl daemon-reload
-sudo systemctl enable --now elasticsearch.service
+# Перезапуск сервиса
+sudo systemctl restart elasticsearch.service
