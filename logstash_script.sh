@@ -9,7 +9,7 @@ cp -R /etc/elasticsearch/certs /etc/logstash/config
 chown -R root:logstash /etc/logstash/config
 
 # Замена строк в файле
-sed -i 's|#  path.config: .*|  path.config: /etc/logstash/conf.d|g' "$config_path"
+sed -i 's|# path.config: .*|path.config: /etc/logstash/conf.d|g' "$config_path"
 
 # Добовляем в автозагрузку сервис Logstash
 systemctl enable --now logstash.service
