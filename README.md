@@ -105,7 +105,7 @@
 
 ### 2. Настраиваем Elasticsearch:
    
-* #### Запустить скрипт [elasticsearch_config.sh](https://github.com/rashenko/log-git/blob/main/elasticsearch_script.sh), он настроит Elasticsearch;
+* #### Запустить скрипт [elasticsearch_script.sh](https://github.com/rashenko/log-git/blob/main/elasticsearch_script.sh), он настроит Elasticsearch;
 
 ### 3. Настраиваем Kibana:
    
